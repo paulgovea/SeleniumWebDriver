@@ -1,6 +1,6 @@
 package com.automatizationtest.web;
 
-import static org.junit.Assert.*;
+
 
 import org.junit.After;
 import org.junit.Before;
@@ -11,8 +11,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class AutomatedTest {
 	
-	WebDriver driver = new ChromeDriver();
-	
+	private WebDriver driver;
 	//Data Browse Locator
 	By registerLinkLocator = By.linkText("Registrarse");
 	By registerPageLocator = By.xpath("//strong ['Registrar']");
