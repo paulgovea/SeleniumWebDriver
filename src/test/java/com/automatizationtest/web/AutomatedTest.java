@@ -11,7 +11,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class AutomatedTest {
 	
-	private WebDriver driver;
+	WebDriver driver = new ChromeDriver();
+	
 	//Data Browse Locator
 	By registerLinkLocator = By.linkText("Registrarse");
 	By registerPageLocator = By.xpath("//strong ['Registrar']");
@@ -52,7 +53,7 @@ public class AutomatedTest {
 
 	@After
 	public void tearDown() throws Exception {
-		//driver.quit();
+		driver.quit();
 	}
 
 	@Test
